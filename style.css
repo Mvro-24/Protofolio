@@ -1,66 +1,64 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-.banner{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-cosmetic-skin-care-perfume-poster-banner-image_196022.jpg);
-    background-size: cover;
-}
-.navbar{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
+/* تنسيق الصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    border-style: ridge;
+    height: 100vh;
+    margin: 0;
 }
-.logo{
-    width: 160px;
-    display: inline-block;
-    margin: 0 20px;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: up-and-down;
-    animation-timeline: auto;
-    animation-range-start: normal;
-    animation-range-end: normal;
+
+/* تنسيق الحاوية */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
 }
-.navbar ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 0 20px;
-    position: relative;
+
+/* تنسيق العنوان */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
 }
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
+
+/* تنسيق الحقول */
+label {
+    display: block;
+    margin: 15px 0 5px;
+    text-align: left;
 }
-.navbar ul li ::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #009688;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-    animation: 5s;
-}
-.navbar ul li :hover:after{
+
+input, select {
     width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
-p{
-    font-family: sans-serif;
-    border:5px solid red;
-    display: inline-block;
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* إضافات صغيرة لتنسيق أفضل */
+input::placeholder {
+    color: #999;
+}
+
+select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
 }
