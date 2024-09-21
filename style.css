@@ -1,64 +1,100 @@
 /* تنسيق الصفحة */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: url(passport-airplane-air-ticket-blue-background_130265-6826.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
-/* تنسيق الحاوية */
-.form-container {
+/* تنسيق الحاوية الرئيسية */
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* تنسيق صورة الطائرة */
+.image-container {
+    width: 100%;
+    height: 200px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* تنسيق الحاوية الخاصة بالفورم */
+.form-container {
+    padding: 20px;
     text-align: center;
 }
 
-/* تنسيق العنوان */
 h1 {
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 22px;
+    font-size: 28px;
+    color: #00796b;
 }
 
 /* تنسيق الحقول */
 label {
     display: block;
-    margin: 15px 0 5px;
+    margin: 10px 0 5px;
     text-align: left;
+    color: #004d40;
 }
 
 input, select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #004d40;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
+/* تنسيق زر الإرسال */
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #00796b;
     color: white;
     border: none;
     padding: 12px;
     cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #004d40;
 }
 
-/* إضافات صغيرة لتنسيق أفضل */
+/* إضافات للتنسيق الجمالي */
 input::placeholder {
-    color: #999;
+    color: #b0bec5;
 }
 
 select {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #004d40;
+}
+
+input, select:focus {
+    border-color: #00796b;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.3);
 }
