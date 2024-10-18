@@ -1,0 +1,121 @@
+ body {
+    display: flex; /* استخدام flexbox */
+    justify-content: center; /* مركزية العناصر أفقياً */
+    align-items: center; /* مركزية العناصر رأسياً */
+    height: 100vh; /* جعل ارتفاع الصفحة كاملة */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    font-family: 'Arial', sans-serif; /* الخط */
+    background-color: #f4f4f4; /* لون خلفية */
+    transition: background-color 0.5s; /* تأثير انتقال لخلفية الصفحة */
+}
+
+body.dark {
+    background-color: #2c3e50; /* لون خلفية داكن */
+    color: #ecf0f1; /* لون نص فاتح */
+}
+
+/* تنسيق الآلة الحاسبة */
+.calculator {
+    background: white; /* لون خلفية الآلة الحاسبة */
+    border-radius: 11px; /* زوايا دائرية */
+    padding: 35px; /* حشوة داخلية */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    width: 300px; /* عرض ثابت للآلة الحاسبة */
+    transition: background-color 0.5s; /* تأثير انتقال لخلفية الآلة الحاسبة */
+}
+
+.calculator.dark {
+    background: #34495e; /* لون خلفية داكن للآلة الحاسبة */
+}
+
+/* تنسيق عنوان الآلة الحاسبة */
+h1 {
+    text-align: center; /* مركزية العنوان */
+    margin-bottom: 20px; /* تباعد أسفل العنوان */
+    font-size: 24px; /* حجم الخط */
+}
+
+/* تنسيق حقول الإدخال */
+input[type="text"] {
+    width: 100%; /* عرض كامل */
+    padding: 10px; /* حشوة داخلية */
+    margin-bottom: 15px; /* تباعد أسفل الحقل */
+    border: 1px solid #3498db; /* حدود */
+    border-radius: 5px; /* زوايا دائرية */
+    font-size: 16px; /* حجم الخط */
+    transition: border-color 0.3s; /* انتقال لون الحدود */
+}
+
+input[type="text"]:focus {
+    border-color: #2980b9; /* تغيير لون الحدود عند التركيز */
+    outline: none; /* إزالة الإطار الافتراضي */
+}
+
+/* تنسيق عنصر select */
+select {
+
+    width: 50%; /* عرض كامل */
+    padding: 10px; /* حشوة */
+    border: 1px solid #3498db; /* حدود */
+    border-radius: 5px; /* زوايا دائرية */
+    background-color: white; /* لون خلفية */
+    font-size: 16px; /* حجم الخط */
+    transition: border-color 0.3s; /* انتقال لون الحدود */
+}
+
+select:focus {
+    border-color: #2980b9; /* تغيير لون الحدود عند التركيز */
+    outline: none; /* إزالة الإطار الافتراضي */
+}
+
+/* تنسيق زر التحويل */
+.toggle-theme {
+    margin: 20px auto; /* تباعد في الوسط */
+    padding: 10px; /* حشوة */
+    border: none; /* إزالة الحدود */
+    background: transparent; /* خلفية شفافة */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    font-size: 20px; /* حجم الخط */
+    transition: transform 0.3s; /* تأثير انتقال */
+}
+
+.toggle-theme:hover {
+    transform: scale(1.1); /* تكبير عند المرور */
+}
+
+/* تنسيق أزرار الأرقام */
+button {
+    padding: 15px; /* حشوة الزر */
+    font-size: 16px; /* حجم النص داخل الزر */
+    cursor: pointer; /* تغيير المؤشر عند المرور فوق الزر */
+    border: 1px solid #3498db; /* حدود أزرار الأرقام بنفس اللون */
+    border-radius: 5px; /* زوايا دائرية للأزرار */
+    background-color: #3498db; /* لون خلفية الأزرار */
+    color: white; /* لون نص الأزرار */
+    margin: 5px; /* تباعد بين الأزرار */
+    transition: background-color 0.3s; /* انتقال لون الخلفية */
+}
+
+button:hover {
+    background-color: #2980b9; /* لون مختلف عند تمرير الماوس فوق الزر */
+}
+
+/* تنسيق عناصر النتيجة */
+#result {
+    margin-top: 20px; /* تباعد أعلى النتيجة */
+    font-size: 20px; /* حجم النص للنتيجة */
+    color: #2c3e50; /* لون النص للنتيجة */
+    text-align: center; /* مركز النتيجة */
+    padding: 10px; /* حشوة للنتيجة */
+    border: 2px dashed #3498db; /* حدود منقطة */
+    border-radius: 5px; /* زوايا دائرية */
+    background-color: #f9f9f9; /* لون خلفية النتيجة */
+}
+
+/* تنسيق grid للأزرار */
+#number-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة */
+    gap: 10px; /* الفجوة بين الأزرار */
+    margin-top: 20px;
+}
